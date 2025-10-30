@@ -42,3 +42,11 @@ bool isSortedDecreasing(int arr[], int size) {
 	}
 	return true;
 }
+bool hasAdjecentDuplicates(int arr[], int size) {
+	for (int i = 0; i < size - 1; i++) {
+		if (arr[i] == arr[i + 1]) {
+			return true;
+		}
+	}
+	return false;
+}
