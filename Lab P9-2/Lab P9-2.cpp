@@ -50,3 +50,13 @@ bool hasAdjecentDuplicates(int arr[], int size) {
 	}
 	return false;
 }
+bool hasDuplicates(int arr[], int size) {
+	for (int i = 0; i < size; i++) {
+		for (int j = i + 1; j < size; j++) {
+			if (arr[i] == arr[j]) {
+				return true;
+			}
+		}
+	}
+	return false;
+}
